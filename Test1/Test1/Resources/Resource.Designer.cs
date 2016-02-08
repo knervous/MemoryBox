@@ -69,28 +69,31 @@ namespace Test1
 			public const int monoandroidsplash = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int round_button = 2130837512;
+			public const int note = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int SwissAlps = 2130837513;
+			public const int round_button = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int text_mem = 2130837514;
+			public const int SwissAlps = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int textMem = 2130837515;
+			public const int text_mem = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int vid_mem = 2130837516;
+			public const int textMem = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int vidMem = 2130837517;
+			public const int vid_mem = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int voice_mem = 2130837518;
+			public const int vidMem = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int voiceMem = 2130837519;
+			public const int voice_mem = 2130837519;
+			
+			// aapt resource value: 0x7f020010
+			public const int voiceMem = 2130837520;
 			
 			static Drawable()
 			{
@@ -114,8 +117,8 @@ namespace Test1
 			// aapt resource value: 0x7f070004
 			public const int loginInput = 2131165188;
 			
-			// aapt resource value: 0x7f070008
-			public const int memFrame = 2131165192;
+			// aapt resource value: 0x7f070009
+			public const int memFrame = 2131165193;
 			
 			// aapt resource value: 0x7f070001
 			public const int memListView = 2131165185;
@@ -131,6 +134,9 @@ namespace Test1
 			
 			// aapt resource value: 0x7f070000
 			public const int toMemories = 2131165184;
+			
+			// aapt resource value: 0x7f070008
+			public const int toggleMusic = 2131165192;
 			
 			static Id()
 			{

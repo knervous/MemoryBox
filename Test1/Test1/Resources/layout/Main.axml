@@ -6,4 +6,12 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:id="@+id/titleScreen"
-    android:background="@drawable/cover" />
+    android:background="@drawable/cover">
+    <ToggleButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/toggleMusic"
+        android:background="@drawable/note"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="450dp" />
+</FrameLayout>
