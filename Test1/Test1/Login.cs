@@ -8,7 +8,7 @@ using Android.Content;
 
 namespace Test1
 {
-    [Activity(Label = "test page")]
+    [Activity()]
     public class Login : Activity
     {
         private Button loginButton;
@@ -17,8 +17,14 @@ namespace Test1
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+            ActionBar.Hide();
             SetContentView(Resource.Layout.Login);
+            ActionBar.Hide();
             loginButton = FindViewById<Button>(Resource.Id.loginButton);
+
+            var editText = FindViewById<EditText>(Resource.Id.loginInput);
+            
+
 
             loginButton.Click += (sender, e) =>
             {

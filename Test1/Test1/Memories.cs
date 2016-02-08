@@ -14,11 +14,13 @@ using Android.Graphics.Drawables.Shapes;
 
 namespace Test1
 {
-    [Activity(Label = "Memories")]
+    [Activity()]
     public class Memories : Activity, View.IOnTouchListener
     {
-        private List<Button> voiceButtons;
+        
         private Button testButton;
+        private Button testButton2;
+        private Button testButton3;
         private FrameLayout fl;
         private float _viewX;
         private float _viewY;
@@ -26,20 +28,29 @@ namespace Test1
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            ActionBar.Hide();
             SetContentView(Resource.Layout.Memories);
-            //voiceButtons.Add(new Button(this));
-            //voiceButtons[0].SetBackgroundResource(Resource.Drawable.voiceMem);
-            //voiceButtons[0].SetHeight(50);
-            //voiceButtons[0].SetWidth(50);
+            
 
             testButton = new Button(this);
-            
+            testButton2 = new Button(this);
+            testButton3 = new Button(this);
+
             FrameLayout.LayoutParams prm = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WrapContent, FrameLayout.LayoutParams.WrapContent);
+            prm.Height = 175;
+            prm.Width = 175;
             fl = FindViewById<FrameLayout>(Resource.Id.memFrame);
             fl.AddView(testButton, prm);
+            fl.AddView(testButton2, prm);
+            fl.AddView(testButton3, prm);
+
             testButton.SetBackgroundResource(Resource.Drawable.voice_mem);
+            testButton2.SetBackgroundResource(Resource.Drawable.text_mem);
+            testButton3.SetBackgroundResource(Resource.Drawable.vid_mem);
 
             testButton.SetOnTouchListener(this);
+            testButton2.SetOnTouchListener(this);
+            testButton3.SetOnTouchListener(this);
             
 
         }

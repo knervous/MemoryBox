@@ -48,37 +48,49 @@ namespace Test1
 			public const int cover = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int Icon = 2130837505;
+			public const int coverBlank = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int loginFrame = 2130837506;
+			public const int Icon = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int memBackground = 2130837507;
+			public const int loginButton5 = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int memBoxPS = 2130837508;
+			public const int loginButton6 = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int monoandroidsplash = 2130837509;
+			public const int memBackground = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int round_button = 2130837510;
+			public const int memBoxPS = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int SwissAlps = 2130837511;
+			public const int monoandroidsplash = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int textMem = 2130837512;
+			public const int round_button = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int vidMem = 2130837513;
+			public const int SwissAlps = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int voice_mem = 2130837514;
+			public const int text_mem = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int voiceMem = 2130837515;
+			public const int textMem = 2130837515;
+			
+			// aapt resource value: 0x7f02000c
+			public const int vid_mem = 2130837516;
+			
+			// aapt resource value: 0x7f02000d
+			public const int vidMem = 2130837517;
+			
+			// aapt resource value: 0x7f02000e
+			public const int voice_mem = 2130837518;
+			
+			// aapt resource value: 0x7f02000f
+			public const int voiceMem = 2130837519;
 			
 			static Drawable()
 			{
@@ -93,20 +105,32 @@ namespace Test1
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int listView1 = 2131099649;
+			// aapt resource value: 0x7f070002
+			public const int listView2 = 2131165186;
 			
-			// aapt resource value: 0x7f060002
-			public const int loginButton = 2131099650;
+			// aapt resource value: 0x7f070003
+			public const int loginButton = 2131165187;
 			
-			// aapt resource value: 0x7f060004
-			public const int memFrame = 2131099652;
+			// aapt resource value: 0x7f070004
+			public const int loginInput = 2131165188;
 			
-			// aapt resource value: 0x7f060003
-			public const int titleScreen = 2131099651;
+			// aapt resource value: 0x7f070008
+			public const int memFrame = 2131165192;
 			
-			// aapt resource value: 0x7f060000
-			public const int toMemories = 2131099648;
+			// aapt resource value: 0x7f070001
+			public const int memListView = 2131165185;
+			
+			// aapt resource value: 0x7f070005
+			public const int textView1 = 2131165189;
+			
+			// aapt resource value: 0x7f070006
+			public const int textView2 = 2131165190;
+			
+			// aapt resource value: 0x7f070007
+			public const int titleScreen = 2131165191;
+			
+			// aapt resource value: 0x7f070000
+			public const int toMemories = 2131165184;
 			
 			static Id()
 			{
@@ -143,14 +167,30 @@ namespace Test1
 			}
 		}
 		
+		public partial class Raw
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int avril_14th = 2130968576;
+			
+			static Raw()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Raw()
+			{
+			}
+		}
+		
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int ApplicationName = 2131034113;
 			
-			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int Hello = 2131034112;
 			
 			static String()
 			{
@@ -165,11 +205,11 @@ namespace Test1
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int Mono_Android_Theme_Splash = 2131034113;
+			// aapt resource value: 0x7f060001
+			public const int Mono_Android_Theme_Splash = 2131099649;
 			
-			// aapt resource value: 0x7f050000
-			public const int button_text = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int button_text = 2131099648;
 			
 			static Style()
 			{
