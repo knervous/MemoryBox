@@ -6,7 +6,7 @@ using Android.Widget;
 using Android.Views;
 using Android.Content;
 
-namespace Test1
+namespace MemoryBox
 {
     [Activity()]
     public class Login : Activity

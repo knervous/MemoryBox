@@ -1,14 +1,9 @@
-﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
+﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using System.Collections.Generic;
 using Android.Media;
 
-namespace Test1
+namespace MemoryBox
 {
     [Activity(MainLauncher = true)]
     public class MainActivity : Activity
@@ -25,8 +20,8 @@ namespace Test1
             SetContentView(Resource.Layout.Main);
             cover = FindViewById<FrameLayout>(Resource.Id.titleScreen);
             player = MediaPlayer.Create(this, Resource.Raw.avril_14th);
-            //player.Start();
             toggleMusic = FindViewById<ToggleButton>(Resource.Id.toggleMusic);
+            
             
 
             cover.Click += delegate
@@ -39,8 +34,9 @@ namespace Test1
                 if (toggleMusic.Checked)
                 {
                     player.Release();
-                    toggleMusic = FindViewById<ToggleButton>(Resource.Id.toggleMusic);
+                    player = MediaPlayer.Create(this, Resource.Raw.avril_14th);
                     player.Start();
+                    player.Looping = true;
                 }
                 else
                     player.Stop();
@@ -49,8 +45,14 @@ namespace Test1
 
         }
 
+        public override void OnBackPressed()
+        {
+            Finish();
+            Process.KillProcess(Process.MyPid());
+        }
 
-        
+
+
 
 
     }

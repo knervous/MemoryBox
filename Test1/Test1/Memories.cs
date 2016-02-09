@@ -1,56 +1,41 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Java.Util;
-using Android.Graphics.Drawables.Shapes;
 
-namespace Test1
+namespace MemoryBox
 {
     [Activity()]
     public class Memories : Activity, View.IOnTouchListener
     {
         
-        private Button testButton;
-        private Button testButton2;
-        private Button testButton3;
+
         private FrameLayout fl;
         private float _viewX;
         private float _viewY;
+        private List<Button> voiceButtons;
+        private List<Button> textButtons;
+        private List<Button> vidButtons;
+        private List<FrameLayout.LayoutParams> prmList;
+        
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             ActionBar.Hide();
             SetContentView(Resource.Layout.Memories);
-            
-
-            testButton = new Button(this);
-            testButton2 = new Button(this);
-            testButton3 = new Button(this);
-
-            FrameLayout.LayoutParams prm = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WrapContent, FrameLayout.LayoutParams.WrapContent);
-            prm.Height = 175;
-            prm.Width = 175;
+            prmList = new List<FrameLayout.LayoutParams>();
             fl = FindViewById<FrameLayout>(Resource.Id.memFrame);
-            fl.AddView(testButton, prm);
-            fl.AddView(testButton2, prm);
-            fl.AddView(testButton3, prm);
 
-            testButton.SetBackgroundResource(Resource.Drawable.voice_mem);
-            testButton2.SetBackgroundResource(Resource.Drawable.text_mem);
-            testButton3.SetBackgroundResource(Resource.Drawable.vid_mem);
+            voiceButtons = new List<Button>();
+            textButtons = new List<Button>();
+            vidButtons = new List<Button>();
 
-            testButton.SetOnTouchListener(this);
-            testButton2.SetOnTouchListener(this);
-            testButton3.SetOnTouchListener(this);
+            var randInt = (int)RandomNumber(1, 5);
+
+            CreateButtons(randInt);
             
 
         }
@@ -65,10 +50,7 @@ namespace Test1
 
                     break;
                 case MotionEventActions.Move:
-                    //var left = (int)(e.RawX - _viewX);
-                    //var right = (int)(left + v.Width);
-                    //v.Layout(left, v.Top, right, v.Bottom);
-                    //break;
+
                     v.Animate()
                         .X(e.RawX + _viewX)
                        .Y(e.RawY + _viewY)
@@ -79,6 +61,43 @@ namespace Test1
 
             }
             return true;
+        }
+
+        private int RandomNumber(int min, int max)
+        {
+            System.Random random = new System.Random();
+            return random.Next(min, max);
+        }
+
+        public void CreateButtons(int number)
+        {
+            int dimensionRand = 0;
+            for (int i = 0; i < number; i++)
+            {
+                prmList.Add(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WrapContent, FrameLayout.LayoutParams.WrapContent));
+
+                voiceButtons.Add(new Button(this));
+                textButtons.Add(new Button(this));
+                vidButtons.Add(new Button(this));
+
+                dimensionRand = RandomNumber(100, 200);
+
+                prmList[i].Height = dimensionRand;
+                prmList[i].Width = dimensionRand;
+
+                fl.AddView(voiceButtons[i], prmList[i]);
+                fl.AddView(textButtons[i], prmList[i]);
+                fl.AddView(vidButtons[i], prmList[i]);
+
+                voiceButtons[i].SetBackgroundResource(Resource.Drawable.voice_mem);
+                textButtons[i].SetBackgroundResource(Resource.Drawable.text_mem);
+                vidButtons[i].SetBackgroundResource(Resource.Drawable.vid_mem);
+
+                voiceButtons[i].SetOnTouchListener(this);
+                textButtons[i].SetOnTouchListener(this);
+                vidButtons[i].SetOnTouchListener(this);
+
+            }
         }
     }
 }

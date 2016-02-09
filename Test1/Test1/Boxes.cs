@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace Test1
+namespace MemoryBox
 {
     [Activity()]
     public class Boxes : Activity
