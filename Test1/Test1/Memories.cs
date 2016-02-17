@@ -89,9 +89,9 @@ namespace MemoryBox
                 fl.AddView(textButtons[i], prmList[i]);
                 fl.AddView(vidButtons[i], prmList[i]);
 
-                voiceButtons[i].SetBackgroundResource(Resource.Drawable.voice_mem);
-                textButtons[i].SetBackgroundResource(Resource.Drawable.text_mem);
-                vidButtons[i].SetBackgroundResource(Resource.Drawable.vid_mem);
+                voiceButtons[i].SetBackgroundResource(Resource.Drawable.voiceMem);
+                textButtons[i].SetBackgroundResource(Resource.Drawable.textMem);
+                vidButtons[i].SetBackgroundResource(Resource.Drawable.vidMem);
 
                 voiceButtons[i].SetOnTouchListener(this);
                 textButtons[i].SetOnTouchListener(this);

@@ -19,17 +19,13 @@ namespace MemoryBox
             base.OnCreate(bundle);
             ActionBar.Hide();
             SetContentView(Resource.Layout.Login);
-            ActionBar.Hide();
-            loginButton = FindViewById<Button>(Resource.Id.loginButton);
 
-            var editText = FindViewById<EditText>(Resource.Id.loginInput);
-            
+            loginButton = FindViewById<Button>(Resource.Id.loginButton);
 
 
             loginButton.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof(Boxes));
-                StartActivity(intent);
+                StartActivity(typeof(Boxes));
             };
 
         }

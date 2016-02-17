@@ -51,49 +51,64 @@ namespace MemoryBox
 			public const int coverBlank = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int Icon = 2130837506;
+			public const int entryBox = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int loginButton5 = 2130837507;
+			public const int Icon = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int loginButton6 = 2130837508;
+			public const int loginbutton = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int memBackground = 2130837509;
+			public const int loginButton7 = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int memBoxPS = 2130837510;
+			public const int loginButtonPressed = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int monoandroidsplash = 2130837511;
+			public const int loginSignIn = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int note = 2130837512;
+			public const int memBackground = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int round_button = 2130837513;
+			public const int memBox = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int SwissAlps = 2130837514;
+			public const int memBoxPS = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int text_mem = 2130837515;
+			public const int note = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int textMem = 2130837516;
+			public const int password = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int vid_mem = 2130837517;
+			public const int round_button = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int vidMem = 2130837518;
+			public const int SwissAlps = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int voice_mem = 2130837519;
+			public const int text_mem = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int voiceMem = 2130837520;
+			public const int textMem = 2130837520;
+			
+			// aapt resource value: 0x7f020011
+			public const int username = 2130837521;
+			
+			// aapt resource value: 0x7f020012
+			public const int vid_mem = 2130837522;
+			
+			// aapt resource value: 0x7f020013
+			public const int vidMem = 2130837523;
+			
+			// aapt resource value: 0x7f020014
+			public const int voice_mem = 2130837524;
+			
+			// aapt resource value: 0x7f020015
+			public const int voiceMem = 2130837525;
 			
 			static Drawable()
 			{
@@ -108,35 +123,44 @@ namespace MemoryBox
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f07000b
+			public const int infoButton = 2131165195;
+			
 			// aapt resource value: 0x7f070002
 			public const int listView2 = 2131165186;
 			
-			// aapt resource value: 0x7f070003
-			public const int loginButton = 2131165187;
+			// aapt resource value: 0x7f070007
+			public const int loginButton = 2131165191;
 			
-			// aapt resource value: 0x7f070004
-			public const int loginInput = 2131165188;
-			
-			// aapt resource value: 0x7f070009
-			public const int memFrame = 2131165193;
+			// aapt resource value: 0x7f07000c
+			public const int memFrame = 2131165196;
 			
 			// aapt resource value: 0x7f070001
 			public const int memListView = 2131165185;
 			
-			// aapt resource value: 0x7f070005
-			public const int textView1 = 2131165189;
+			// aapt resource value: 0x7f07000a
+			public const int musicHeader = 2131165194;
 			
 			// aapt resource value: 0x7f070006
-			public const int textView2 = 2131165190;
+			public const int password = 2131165190;
 			
-			// aapt resource value: 0x7f070007
-			public const int titleScreen = 2131165191;
+			// aapt resource value: 0x7f070008
+			public const int titleScreen = 2131165192;
 			
 			// aapt resource value: 0x7f070000
 			public const int toMemories = 2131165184;
 			
-			// aapt resource value: 0x7f070008
-			public const int toggleMusic = 2131165192;
+			// aapt resource value: 0x7f070009
+			public const int toggleMusic = 2131165193;
+			
+			// aapt resource value: 0x7f070005
+			public const int txtPassword = 2131165189;
+			
+			// aapt resource value: 0x7f070003
+			public const int txtUsername = 2131165187;
+			
+			// aapt resource value: 0x7f070004
+			public const int username = 2131165188;
 			
 			static Id()
 			{
@@ -210,9 +234,6 @@ namespace MemoryBox
 		
 		public partial class Style
 		{
-			
-			// aapt resource value: 0x7f060001
-			public const int Mono_Android_Theme_Splash = 2131099649;
 			
 			// aapt resource value: 0x7f060000
 			public const int button_text = 2131099648;
